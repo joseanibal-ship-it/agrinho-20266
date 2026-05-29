@@ -1,0 +1,52 @@
+/* ==========================================================================
+   CONFIGURAÇÕES GERAIS
+   ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f9f4; /* Fundo verde bem claro, confortável para leitura */
+    color: #333333;
+    line-height: 1.6;
+}
+
+/* ==========================================================================
+   CABEÇALHO (HEADER) E NAVEGAÇÃO (NAV)
+   ========================================================================== */
+header {
+    background-color: #2e7d32; /* Verde forte que representa a agricultura */
+    color: #ffffff;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.6rem;
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+}
+
+header p {
+    font-style: italic;
+    font-size: 1.1rem;
+    opacity: 0.9;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+nav {
+    background-color: #1b5e20; /* Verde mais escuro para dar contraste */
+    display: flex;
+    justify-content: center;
+    padding: 12px;
+    position: sticky; /* Faz o menu ficar fixo no topo ao rolar a página */
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
