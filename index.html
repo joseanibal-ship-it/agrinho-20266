@@ -3,113 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto Não Joga Veneno - Agrinho 2026</title>
-    <style>
-        /* Estilização Geral (CSS) */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        body {
-            background-color: #f4f9f4;
-            color: #333;
-            line-height: 1.6;
-        }
-
-        header {
-            background-color: #2e7d32; /* Verde Agro */
-            color: white;
-            padding: 20px 0;
-            text-align: center;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-
-        header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 5px;
-        }
-
-        header p {
-            font-style: italic;
-            font-size: 1.1rem;
-            opacity: 0.9;
-        }
-
-        nav {
-            background-color: #1b5e20;
-            display: flex;
-            justify-content: center;
-            padding: 10px;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: bold;
-            transition: color 0.3s;
-        }
-
-        nav a:hover {
-            color: #81c784;
-        }
-
-        .container {
-            max-width: 1000px;
-            margin: 30px auto;
-            padding: 0 20px;
-        }
-
-        .hero {
-            background-color: white;
-            padding: 40px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-            text-align: center;
-            margin-bottom: 30px;
-        }
-
-        .hero h2 {
-            color: #2e7d32;
-            margin-bottom: 15px;
-        }
-
-        .grid-solucoes {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 20px;
-            margin-top: 20px;
-        }
-
-        .card {
-            background-color: white;
-            padding: 25px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-            border-top: 5px solid #2e7d32;
-        }
-
-        .card h3 {
-            color: #1b5e20;
-            margin-bottom: 10px;
-        }
-
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 20px 0;
-            margin-top: 50px;
-            font-size: 0.9rem;
-        }
-    </style>
+    <title>Agro Negócio - Agrinho 2026</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <header>
-        <h1>Projeto Não Joga Veneno</h1>
+        <h1>Agro Negócio</h1>
         <p>Concurso Agrinho 2026 — Agro Forte e Sustentável: Equilíbrio entre Produção e Meio Ambiente</p>
+        <p class="autor">Desenvolvido por José</p>
     </header>
+
+    <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#problema">Problema</a>
+        <a href="#solucoes">Soluções</a>
+        <a href="#jogo">Jogo</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+    <main class="container">
+        <section id="jogo">
+            <h2>Jogo Agro Negócio</h2>
+            <p>Escolha a prática mais sustentável para a fazenda. Clique em uma opção e veja se acertou!</p>
+            <div class="jogo-buttons">
+                <button class="jogo-btn" data-answer="errado">Usar defensivos químicos em excesso</button>
+                <button class="jogo-btn" data-answer="certo">Rotação de culturas</button>
+                <button class="jogo-btn" data-answer="certo">Controle biológico</button>
+            </div>
+            <div class="resultado-jogo" id="resultadoJogo">Faça sua escolha e veja o resultado.</div>
+        </section>
+
+        <section class="hero" id="sobre">
+            <h2>Um agro mais saudável começa aqui</h2>
+            <p>Aprenda como reduzir o uso de agrotóxicos, proteger o solo e garantir saúde para sua família e comunidade.</p>
+        </section>
+
+        <section id="problema">
+            <h2>Por que evitar venenos na lavoura?</h2>
+            <p>O uso excessivo de defensivos agrícolas pode contaminar água, solo e alimentos, prejudicando pessoas e o meio ambiente. O Agro Negócio propõe alternativas seguras e sustentáveis.</p>
+        </section>
+
+        <section id="solucoes">
+            <h2>Práticas sustentáveis</h2>
+            <div class="grid-solucoes">
+                <article class="card">
+                    <h3>Rotação de culturas</h3>
+                    <p>Alternar culturas fortalece o solo, reduz a incidência de pragas e diminui a dependência de produtos químicos.</p>
+                </article>
+                <article class="card">
+                    <h3>Controle biológico</h3>
+                    <p>Usar inimigos naturais das pragas, como insetos e microorganismos, preserva o ecossistema sem agredir a produção.</p>
+                </article>
+                <article class="card">
+                    <h3>Educação ambiental</h3>
+                    <p>Informar famílias e comunidades sobre o correto uso de recursos aumenta a segurança alimentar e protege o futuro.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="contato">
+            <h2>Fale conosco</h2>
+            <p>Quer saber mais ou participar do projeto? Entre em contato e compartilhe sua ideia.</p>
+            <div class="contato-info">
+                <p><strong>Email:</strong> agrinho2026@exemplo.com</p>
+                <p><strong>Local:</strong> Escola e comunidade rural</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Agro Negócio — Agrinho 2026 • Agro Forte e Sustentável</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

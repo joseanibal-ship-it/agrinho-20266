@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
             saudacao = "Boa noite! 🌙";
         }
 
-        console.log(`${saudacao} Bem-vindo ao site do Projeto Não Joga Veneno. Juntos por um agro sustentável!`);
+        console.log(`${saudacao} Bem-vindo ao site do Agro Negócio. Juntos por um agro sustentável!`);
     };
 
     // 2. Rolagem Suave para os Links do Menu
@@ -53,6 +53,23 @@ document.addEventListener("DOMContentLoaded", () => {
         card.addEventListener('mouseleave', () => {
             card.style.transform = 'scale(1)';
             card.style.boxShadow = '0 2px 4px rgba(0,0,0,0.05)';
+        });
+    });
+
+    // 4. Jogo Agro Negócio: escolha a prática mais sustentável
+    const botoesJogo = document.querySelectorAll('.jogo-btn');
+    const resultadoJogo = document.getElementById('resultadoJogo');
+
+    botoesJogo.forEach(botao => {
+        botao.addEventListener('click', () => {
+            const resposta = botao.dataset.answer;
+            if (resposta === 'certo') {
+                resultadoJogo.textContent = 'Parabéns! Você escolheu uma prática sustentável. 🌱';
+                resultadoJogo.style.color = '#2e7d32';
+            } else {
+                resultadoJogo.textContent = 'Ops! Esta opção não é a mais sustentável. Tente outra prática ecológica.';
+                resultadoJogo.style.color = '#c62828';
+            }
         });
     });
 
