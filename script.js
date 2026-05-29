@@ -73,6 +73,12 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
+    // Abre o jogo logo no início
+    const secaoJogo = document.getElementById('jogo');
+    if (secaoJogo) {
+        secaoJogo.scrollIntoView({ behavior: 'auto', block: 'start' });
+    }
+
     // Executa a saudação ao carregar
     saudarUsuario();
 });
